@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Login - Wrestler Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/beercss@3.0.1/dist/cdn/beer.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/login.js" defer></script>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="loginForm">
+    <label for="loginUsername">Username:</label>
+    <input type="text" id="loginUsername" required>
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" required>
+    <button type="submit">Login</button>
+  </form>
+
+  <h2>Create Account</h2>
+  <form id="signupForm">
+    <label for="signupUsername">Username:</label>
+    <input type="text" id="signupUsername" required>
+    <label for="signupPassword">Password:</label>
+    <input type="password" id="signupPassword" required>
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <div id="feedback" class="feedback"></div>
+  <script>
+    function showFeedback(message) {
+      const feedback = document.getElementById("feedback");
+      feedback.textContent = message;
+
+      feedback.classList.remove("flash");
+      void feedback.offsetWidth;         
+      feedback.classList.add("flash");
+    }
+
+  </script>
+</body>
+<script src="js/login.js" defer></script>
+</html>

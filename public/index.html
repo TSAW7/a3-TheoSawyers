@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wrestler Tracker</title>
+  <link rel="stylesheet" href="https://unpkg.com/beercss@3.0.1/dist/cdn/beer.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js" defer></script>
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <h1>Wrestler Tracker</h1>
+
+  <form id="wrestlerForm">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" required>
+
+    <label for="Weight">Weight:</label>
+    <select id="Weight" required>
+      <option value="125">125</option>
+      <option value="133">133</option>
+      <option value="141">141</option>
+      <option value="149">149</option>
+      <option value="157">157</option>
+      <option value="165">165</option>
+      <option value="174">174</option>
+      <option value="184">184</option>
+      <option value="197">197</option>
+      <option value="285">285</option>
+    </select>
+
+    <label for="Class">Class:</label>
+    <select id="Class" required>
+      <option value="Freshman">Freshman</option>
+      <option value="Sophomore">Sophomore</option>
+      <option value="Junior">Junior</option>
+      <option value="Senior">Senior</option>
+    </select>
+
+    <label for="Wins">Wins:</label>
+    <input type="number" id="Wins" min="0" value="0">
+
+    <label for="Losses">Losses:</label>
+    <input type="number" id="Losses" min="0" value="0">
+
+    <button type="submit" id="submitBtn">Add Wrestler</button>
+  </form>
+
+  <table id="resultsTable"></table>
+</body>
+<script src="js/main.js" defer></script>
+</html>

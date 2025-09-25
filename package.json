@@ -1,0 +1,29 @@
+{
+  "name": "a3-theosawyers",
+  "description": "Assignment 3 - Persistence: Two-tier Web Application with Database, Express server, and CSS template ===",
+  "author": "",
+  "scripts": {
+    "start": "node server.improved.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mime": "^2.6.0",
+    "mongoose": "^8.18.1"
+  },
+  "version": "1.0.0",
+  "main": "server.improved.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TSAW7/a3-TheoSawyers.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/TSAW7/a3-TheoSawyers/issues"
+  },
+  "homepage": "https://github.com/TSAW7/a3-TheoSawyers#readme"
+}

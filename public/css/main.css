@@ -1,0 +1,25 @@
+
+.feedback {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(220, 53, 69, 0.95); /* bootstrap red-ish */
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10000;
+  transform: translateY(-100%); /* hidden off top */
+}
+
+@keyframes slideBanner {
+  0%   { transform: translateY(-100%); opacity: 0; }
+  10%  { transform: translateY(0); opacity: 1; }
+  90%  { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(-100%); opacity: 0; }
+}
+
+.flash {
+  animation: slideBanner 3s ease-in-out forwards;
+}
